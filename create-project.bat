@@ -18,6 +18,6 @@ if exist ..\projects\%project_name% (
     
     django-admin startproject %project_name% ..\projects\%project_name%
 
-    xcopy /q .\activate.bat .\projects\%project_name%
+    xcopy .\activate.bat ..\projects\%project_name%\ /Y
 
 )
